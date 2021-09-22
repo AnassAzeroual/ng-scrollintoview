@@ -1,0 +1,19 @@
+<div class="nav">
+  <span (click)="ScrollIntoView('#first')">first</span>
+  <span (click)="ScrollIntoView('#second')">second</span>
+  <span (click)="ScrollIntoView('#third')">third</span>
+</div>
+<div
+  style="height: 95em;
+overflow: scroll;"
+>
+  <div id="first">
+    <hello name="{{ name }}"></hello>
+  </div>
+  <div id="second">
+    <hello-again name="{{ name }}"></hello-again>
+  </div>
+  <div id="third">
+    <hello-final name="{{ name }}"></hello-final>
+  </div>
+</div>
